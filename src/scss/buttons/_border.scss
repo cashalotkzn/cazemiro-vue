@@ -1,0 +1,13 @@
+@import "../border";
+
+$buttons-border-radius-x: $border-radius-x;
+$buttons-border-radius-y: $border-radius-y;
+
+$buttons-border-radius-top: $buttons-border-radius-y;
+$buttons-border-radius-right: $buttons-border-radius-x;
+$buttons-border-radius-bottom: $buttons-border-radius-y;
+$buttons-border-radius-left:$buttons-border-radius-x;
+
+$buttons-border-radius: $buttons-border-radius-top $buttons-border-radius-right $buttons-border-radius-bottom $buttons-border-radius-left;
+
+$buttons-border: $border;

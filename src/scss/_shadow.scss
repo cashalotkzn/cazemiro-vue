@@ -1,0 +1,27 @@
+$box-shadow-offset-x: 0;
+$box-shadow-offset-y: 2px;
+
+$box-shadow-blur: 4px;
+$box-shadow-spread: 0;
+
+$box-shadow-color: rgb(#000, 0.4);
+
+$box-shadow: $box-shadow-offset-x $box-shadow-offset-y $box-shadow-blur $box-shadow-spread $box-shadow-color;
+
+$box-shadow-offset-x_hover: 2px;
+$box-shadow-offset-y_hover: 4px;
+
+$box-shadow-blur_hover: 4px;
+$box-shadow-spread_hover: 0;
+
+$box-shadow-color_hover: $box-shadow-color;
+
+$box-shadow_hover: $box-shadow-offset-x_hover $box-shadow-offset-y_hover $box-shadow-blur_hover $box-shadow-spread_hover $box-shadow-color_hover;
+
+[class*="_shadow"] {
+  box-shadow: $box-shadow;
+
+  &:hover {
+    box-shadow: $box-shadow_hover;
+  }
+}

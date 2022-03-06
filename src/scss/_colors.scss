@@ -1,0 +1,24 @@
+$colors: (
+        'primary': '91, 60, 196',
+        'success': '23, 201, 100',
+        'danger': '242, 19, 93',
+        'warn': '254, 130, 0',
+        'dark': '36, 33, 69'
+);
+
+:root {
+  @each $colorName, $colorValue in $colors {
+    --cz-#{$colorName}: #{$colorValue}
+  }
+}
+
+@each $colorName, $colorValue in $colors {
+  [class*="_color_#{$colorName}"] {
+    --cz-color: #{$colorValue};
+    background-color: rgba(var(--cz-#{$colorName}));
+  }
+}
+
+*:disabled {
+  opacity: 0.3;
+}

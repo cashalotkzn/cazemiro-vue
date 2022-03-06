@@ -1,0 +1,4 @@
+@import "../transitions";
+
+$buttons-transition: $transition;
+$buttons-transform_active: translateY(2px)

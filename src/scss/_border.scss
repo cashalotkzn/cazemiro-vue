@@ -1,0 +1,19 @@
+$border-radius-x: 0.5rem;
+$border-radius-y: 0.5rem;
+
+$border-radius-right: $border-radius-y;
+$border-radius-bottom: $border-radius-x;
+$border-radius-left: $border-radius-y;
+$border-radius-top: $border-radius-x;
+
+$border-radius: $border-radius-top $border-radius-right $border-radius-bottom $border-radius-left;
+
+$border: none;
+
+[class*="_circle"] {
+  border-radius: 100rem !important;
+}
+
+[class*="_square"] {
+  border-radius: 0 !important;
+}
